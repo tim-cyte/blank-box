@@ -19,7 +19,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1744295738283,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1744296387213
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -85,8 +90,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4655555555555555,
-            "y": 0.3961456102783726,
+            "x": 0.465,
+            "y": 0.404710920770878,
             "uniqueID": 1744296162373,
             "ioValues": [
                 {
@@ -103,7 +108,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 99
+                    "ioValue": 100
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -127,11 +132,11 @@
             "description": "Extrudes a 2D shape. Input can be negitive. "
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.6055555555555555,
-            "y": 0.7537473233404711,
-            "uniqueID": 1744296360885,
+            "atomType": "Fusion",
+            "name": "Fusion",
+            "x": 0.6594444444444444,
+            "y": 0.5331905781584583,
+            "uniqueID": 1744296387213,
             "ioValues": [
                 {
                     "name": "Shape 1",
@@ -142,7 +147,8 @@
                     "ioValue": 1744295936914
                 }
             ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Fusion"
         }
     ],
     "allConnectors": [
@@ -158,7 +164,7 @@
             "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1744295936914,
-            "ap2ID": 1744296360885
+            "ap2ID": 1744296387213
         },
         {
             "ap1Name": "geometry",
@@ -179,7 +185,14 @@
             "ap2Name": "Shape 1",
             "ap2Primary": false,
             "ap1ID": 1744296207044,
-            "ap2ID": 1744296360885
+            "ap2ID": 1744296387213
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1744296387213,
+            "ap2ID": 1744295738283
         }
     ],
     "unitsKey": "MM",
